@@ -203,8 +203,8 @@ public class HomeController {
 			user.getContacts().add(contact);
 			contact.setUser(user);
 			this.userRepository.save(user);
-			System.out.println("Added to Data Base");			
-			System.out.println("DATA "+contact);
+			//System.out.println("Added to Data Base");			
+			//System.out.println("DATA "+contact);
 			//Success Message.....
 			session.setAttribute("meassge", new Message("Your 1-Contact is Saved !!Add more contact","success"));
 			
