@@ -4,6 +4,7 @@ package com.smart.controller;
 import java.io.File;
 import com.razorpay.*;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.security.Principal;
@@ -43,7 +44,6 @@ import com.smart.entities.User;
 import com.smart.helper.Message;
 import com.smart.service.EmailService;
 
-import jakarta.persistence.criteria.Path;
 import jakarta.servlet.http.HttpSession;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
@@ -194,7 +194,7 @@ public class HomeController {
 				
 				File savefile=new ClassPathResource("static/image").getFile();
 				
-				java.nio.file.Path path=Paths.get(savefile.getAbsolutePath()+File.separator+file.getOriginalFilename());
+				Path path=Paths.get(savefile.getAbsolutePath()+File.separator+file.getOriginalFilename());
 				
 				Files.copy(file.getInputStream(), path, StandardCopyOption.REPLACE_EXISTING);
 				
@@ -311,7 +311,7 @@ public class HomeController {
 				
 				File savefile=new ClassPathResource("static/image").getFile();
 				
-				java.nio.file.Path path=Paths.get(savefile.getAbsolutePath()+File.separator+file.getOriginalFilename());
+				Path path=Paths.get(savefile.getAbsolutePath()+File.separator+file.getOriginalFilename());
 				
 				Files.copy(file.getInputStream(), path, StandardCopyOption.REPLACE_EXISTING);
 				
