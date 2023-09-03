@@ -25,7 +25,7 @@
 						</div> -->
 						
 						<h2 class="text-center">Add Contact !!</h2>
-						<form action="" th:action="@{/process-contact}" method="post" enctype="multipart/form-data" th:object="${contact}" class="mt-2">
+						<form action="" th:action="@{/add-contact}" method="post" enctype="multipart/form-data" th:object="${contact}" class="mt-2">
 							<!-- Name field -->
 							<div class="form-group" th:classappend="${#fields.hasErrors('name')?'is-invalid':''}">
 							
