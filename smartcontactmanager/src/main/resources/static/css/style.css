@@ -132,8 +132,8 @@ background-color: white;
 }
 
 .my_profile_picture{
-	width: 100px;
-	height: 100px;
+	width: 25px;
+	height: 25px;
 	object-fit: cover;
 	border-radius: 50px;	
 }
