@@ -188,7 +188,7 @@ public class HomeController {
 			//Proceesing and uploading file
 			if(file.isEmpty()) {
 				System.out.println("File empty");
-				contact.setImage("madhav.jpg");
+				contact.setImage("conts.jpg");
 			}else {
 				contact.setImage(file.getOriginalFilename());
 				
