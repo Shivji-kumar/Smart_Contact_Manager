@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+ th:replace="base::layout(~{::section})">
+ 
+<head>
+	<meta charset="UTF-8" />
+	<title>About Page</title>
+</head>
+<body>
+	<section>
+		<div class="container text-center" style="background: rgb(192, 192, 192);">
+					
+			<h2>Project Technology Description</h2>
+			<p>This projects are developed in SpringBoot with the help of theameleaf.
+				This is a learning Project, the main Objective of this project to create an application 
+				which stores contacts in very efficient way and provides a smarter way of handling contacts
+				with fully Authentication and Authorization. 			
+				We created this project using Spring Boot Thymeleaf
+				with MVC Architecture and for Authentication and Authorization we have used Spring Security.			
+				Spring Boot is used to develop back-end and Spring Data JPA is used for performing 
+				Database CRUD operations.HTML5, CSS3, Bootstrap and Thymeleaf as template Engine is 
+				used to develop the front end, MySQL for Database.
+				
+			<h2>Contact Management</h2>
+				On the dashboard, users can add new contacts by clicking the "Add Contact" button.
+				
+				To update an existing contact, click the "Edit" button next to the contact on the contact list page.
+				
+				To delete a contact, click the "Delete" button next to the contact on the contact list page.
+				
+				<h2>Future Enhancements</h2>
+				The following enhancements can be considered for future development:
+				
+				Contact Categories: Allow users to categorize contacts for better organization.
+				
+				Import/Export Contacts: Enable users to import and export contact lists.
+				
+				User Profile: Implement user profile settings and customization options.
+				
+			<h2>For Usr to run this Project..</h2>
+			
+				For someone who wants to run this application in their IDE's 
+				can simply download and run this without any changes in configuration.
+				As i have used MySQL for DATABASE it will generate a .db file as database. And you don't even need a username & password.
+			</p>
+			
+			<p><h2>Introduction</h2>
+				In today's fast-paced world, managing contacts efficiently is essential. 
+				This project aims to develop a Smart Contact Manager using the Spring Boot 
+				framework for backend development and Thymeleaf for frontend rendering. 
+				This web application simplifies contact management by providing features for adding,
+				 updating, deleting, and searching for contacts.
+				
+				<h2>Project Overview</h2>
+				The Smart Contact Manager is designed to make it easy for users to manage their contacts.
+				 Users can perform the following tasks:
+				
+				Add Contacts: Users can add new contacts with details such as name, email, phone number, and address.
+				
+				Update Contacts: Existing contacts can be edited, allowing users to modify contact information.
+				
+				Delete Contacts: Users can remove contacts from their list.
+				
+				Search Contacts: The application provides a search feature to find specific contacts quickly.
+				
+				<h2>Technology Stack</h2>
+				The technology stack used for this project includes:
+				
+				Spring Boot: A Java-based framework for building web applications quickly and with minimal configuration.
+				
+				Thymeleaf: A server-side Java template engine for web applications that allows seamless integration with Spring Boot.
+				
+				Spring Data JPA: For simplifying database access using Java objects.
+				
+				MySQL: The database system used to store contact information.
+				
+				HTML/CSS: For the user interface design.
+								
+				<h2>Search Contacts</h2>
+				Search for contacts by name, email, or phone number.
+				5. Architecture
+				The application follows the Model-View-Controller (MVC) architectural pattern:
+				
+				Model: Represents the data and business logic of the application. In this project, it includes contact entities and database access.
+				
+				View: The presentation layer that displays the user interface. Thymeleaf templates are used to render HTML pages.
+				
+				Controller: Handles user requests, interacts with the model, and updates the view. Spring Boot controllers manage the flow of data.
+				
+				<h2>Implementation</h2>
+				The implementation of the Smart Contact Manager involves the following steps:
+				
+				Database Setup: Create the MySQL database and define the Contact entity.
+				
+				Spring Boot Configuration: Configure Spring Boot for database connectivity and security.
+				
+				Thymeleaf Templates: Design user interface templates for adding, editing, and listing contacts.
+				
+				Controller Logic: Implement controller classes to handle CRUD operations.
+				
+				User Authentication: Implement user registration and login functionality with Spring Security.
+				
+				Search Functionality: Add search functionality using Spring Data JPA queries.						
+				
+				<h2>References</h2>
+				Spring Boot Documentation, Thymeleaf Documentation, Spring Data JPA Documentation, MySQL Documentation.
+				</p>
+											
+		</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" 
+th:replace="base::layout(~{::section})">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Login Page</title>
+</head>
+
+<body>
+	<section class="banner d-flex justify-content-center align-items-center">
+		<div class="text-center">
+			<div class="container">
+				<div class="d-flex justify-content-center h-100">
+					<div class="card">
+						<div class="card-header">
+							<h1>Login Here Otherwise Register</h1>
+							<div th:if="${param.error}" class="alert alert-danger">
+								Invalid username and password						
+								
+							</div>
+							<div th:if="${param.logout}" class="alert alert-success">
+								You have been logged out						
+								
+							</div>
+							
+						</div>
+						<div class="card-body">
+							<form id="login-form" class="form" th:action="@{/dologin}" action="#" method="post">
+								<h3><label>Please Enter Your Correct Username </label></h3>
+								<div class="input-group form-group">
+									<div class="input-group-prepend">
+										<span class="input-group-text"><i class="fas fa-user"></i></span>
+									</div>
+									<input name="username" type="text" class="form-control" placeholder="username">
+
+								</div>
+								<h3><label>Pleas Enter Your Correct Password </label></h3>
+								<div class="input-group form-group">
+									<div class="input-group-prepend">
+										<span class="input-group-text"><i class="fas fa-key"></i></span>
+									</div>
+									<input name="password" type="password" class="form-control" placeholder="password">
+								</div>
+								
+								<div class="form-group mt-1">
+									<input type="submit" value="Login" class="btn float-right login_btn">								
+								</div>
+								
+							</form>
+							
+						</div>
+						<div>
+							<div>If, You don't have an Account.
+								<a th:href="@{/signup}" href="#">Register Here..</a>
+							</div>
+							<!-- <div class="d-flex justify-content-center"> -->
+							<div> 
+								<a href="#" th:href="@{/forgot}">Forgot password?</a>
+							</div>
+						</div>											
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+</body>
+
+</html>
